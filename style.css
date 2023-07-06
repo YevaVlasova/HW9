@@ -1,0 +1,43 @@
+*, *:after, *:before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+h1 {
+    padding: 20px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    background: linear-gradient(
+    	-225deg,
+		#ef63ff 0%,
+    	#61ffdf 29%,
+    	#fffb81 67%,
+    	#ef63ff 100%
+  	);
+	background-size: auto auto;
+	background-clip: border-box;
+	background-size: 200% auto;
+	color: #ffffff;
+	background-clip: text;
+	text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 2s linear infinite;
+	display: inline-block;
+}
+
+@keyframes textclip {
+    to {
+    background-position: 200% center;
+    }
+}
